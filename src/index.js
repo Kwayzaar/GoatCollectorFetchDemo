@@ -129,6 +129,7 @@ function feed(e) {
     }))
 }
 
+// DELETE is arguably the easiest options fetch, all you need to do is include the method of DELETE and target the correct model with the fetch!
 function deleteGoat(e, divCard) {
 
   options = {
@@ -137,6 +138,7 @@ function deleteGoat(e, divCard) {
 
   console.log(options)
 
+  // Again, take note that the URL we are fetching to is targeting that ONE SPECIFIC model
   fetch((URL + e.target.id), options)
     .then(res => res.json())
     .then((deletedGoat => {
@@ -145,6 +147,8 @@ function deleteGoat(e, divCard) {
     }))
 }
 
+
+// This is just a render. Y'all can dig through this at your leisure.
 function renderGoat(goat){
   let h2 = document.createElement('h2')
   h2.innerText = goat.name
