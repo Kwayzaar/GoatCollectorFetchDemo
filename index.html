@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Goat Collector</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="goat-header">
+      <img
+        src="https://fontmeme.com/temporary/b6168bee94774ba679736f96b3d29c0a.png"
+        alt="goat-header"
+      />
+    </div>
+
+    <div class="container">
+      <form class="add-goat-form">
+        <h3>Create a goat!</h3>
+
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a goat's name..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="text"
+          name="image"
+          value=""
+          placeholder="Enter a goat's image URL..."
+          class="input-text"
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Create New goat"
+          class="submit"
+        />
+      </form>
+    </div>
+    <p style="text-align:center">
+      Dane needs your help! He can't get enough goats! 
+      <br/>
+      <button id="new-goat-btn">Add a new goat!</button>
+    </p>
+
+    <div id="goat-collection"></div>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
